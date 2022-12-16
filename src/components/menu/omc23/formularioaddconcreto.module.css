@@ -1,0 +1,81 @@
+.btnAdd{
+    display: grid;
+    place-content: center;
+    background-color: rgb(55, 146, 55);
+    height: 30px;
+    border-radius: 10px;
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.btnBack{
+    display: grid;
+    place-content: center;
+    background-color: rgb(219, 20, 20);
+    height: 30px;
+    border-radius: 10px;
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.formHead{
+    background-color: black;
+    color: #fff;
+    height: 40px;
+    border-radius: 5px 5px 0px 0px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 20px ;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.selectForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.selectForm > label{
+    font-size: 20px;
+}
+
+.selectForm > select {
+    height: 35px;
+    border-radius: 5px;
+}
+
+
+.InputForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.InputForm > label{
+    font-size: 18px;
+}
+
+.InputForm > input {
+    height: 35px;
+    background-color: #ccc;
+    border-radius: 10px;
+    color: rgb(34, 33, 33);
+
+}
+
+.textareaForm{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.textareaForm > textarea{
+    border: 1px solid rgb(126, 122, 122);
+    resize: none;
+    border-radius: 5px;
+    color: #333;
+}

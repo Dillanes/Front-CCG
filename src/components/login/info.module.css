@@ -1,0 +1,15 @@
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logoInfo{
+    /* min-width: 300px; */
+    max-width: 400px;
+}
+
+.textInfo{
+    font-size: var(--font-subtitle);
+}

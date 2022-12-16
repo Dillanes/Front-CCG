@@ -1,0 +1,40 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.header{
+    height: 50px;
+    /* background-color: red; */
+    font-size: var(--font-subtitle);
+}
+
+.containerInput{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.input{
+    height: 30px;
+}
+
+.footer{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .containerInput{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+}

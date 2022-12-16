@@ -1,0 +1,28 @@
+.container{
+    position: relative;
+}
+
+.imgHead{
+    width: 100%;
+}
+
+.navBar{
+    font-size: 25px;
+    color: #fff;
+    position: fixed;
+    background-color: rgba(1, 1, 1, 0.1);
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+.containerIcon{
+    margin-right: 20px;
+    display: flex;
+}
