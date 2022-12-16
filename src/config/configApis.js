@@ -1,4 +1,4 @@
-export const BASEURL = 'http://localhost:8000/api/'
+export const BASEURL = 'https://msdocs-python-test-webapp-117.azurewebsites.net/'
 
     
 
