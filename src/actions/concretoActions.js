@@ -17,7 +17,7 @@ export const setConcretoPremezclado = (config)=> (dispatch)=>{
 
 export const registerConcretoPremezclado = (config,data)=> (dispatch)=>{
     console.log('CONFIG ', config);
-    axios.get(`${BASEURL}concretoPremezclado`,data,config)
+    axios.get(`${BASEURL}concretoPremezclado/`,config,data)
     .then(res=>{
         dispatchMessage(dispatch,res)
         setTimeout(() => {

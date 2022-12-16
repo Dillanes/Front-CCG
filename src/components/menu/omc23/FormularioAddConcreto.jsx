@@ -9,9 +9,9 @@ import { config } from '../../../config/configApis'
 import {registerConcretoPremezclado} from '../../../actions/concretoActions'
 
 
-function FormularioAddConcreto() {
+function FormularioAddConcreto({registro}) {
 
-const {register,reset,formState:{errors},handleSubmit,watch} = useForm()
+const {register,reset,handleSubmit,watch} = useForm()
 const [showForm, setshowForm] = useState(false)
 const dispatch = useDispatch()
 const  {authToken} = useSelector(state => state.auth)
@@ -31,6 +31,8 @@ const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 
 
     useEffect(() => {
         setData(getApis)
+        
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     
   const [rc, setRc] = useState()
@@ -57,6 +59,7 @@ const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 
             break;
     }
   }
+  console.log(registro)
 
   const onSubmit = (data,e)=>{
     console.log(e)
@@ -64,6 +67,7 @@ const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 
 
     data.codigoCyC = e.target.codigoCyC.value
     data.desCorta = e.target.desCorta.value
+    data.codigoOmniclass = registro.CodigoOmniclass
 
     for (let item of Object.keys(data)){
             if (data[item] === null){

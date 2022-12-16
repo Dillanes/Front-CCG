@@ -15,7 +15,7 @@ function Omc23Crud() {
       <hr></hr>
       <TableCrud/>
       <hr/>
-      <FormularioAddConcreto/>
+      <FormularioAddConcreto registro={registroSelect}/>
 
     </div>
   )

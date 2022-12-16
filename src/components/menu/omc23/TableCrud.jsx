@@ -83,7 +83,7 @@ const nextPage = ()=>{
             <tbody>
                 {concretoPremezclado?filterConcreto().map((item,id)=>(
                 <tr key={item.identificador}>
-                    <td>{id+1}</td>
+                    <td>{id+1+currentPage}</td>
                     <td>{item.codigoOmniclass}</td>
                     <td>{item.codigoCyC}</td>
                     <td>{item.desCorta}</td>
