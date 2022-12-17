@@ -10,6 +10,7 @@ export const LoginUser = (data)=> (dispatch) =>{
         window.localStorage.setItem('authToken',JSON.stringify(res?.data?.detail[0].data))
         dispatch( Login(res?.data?.detail[0].data))}) 
     .catch(err => {
+        console.log('ERROR',err);
             dispatchMessage(dispatch,err.response)
         })
 }

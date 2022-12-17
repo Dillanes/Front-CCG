@@ -1,4 +1,4 @@
-export const BASEURL = 'https://msdocs-python-test-webapp-117.azurewebsites.net/'
+export const BASEURL = 'https://msdocs-python-test-webapp-117.azurewebsites.net/api/'
 
     
 
